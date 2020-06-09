@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LoadingIndicator.css';
+import './LoadingIndicator.scss';
 
 const LoadingIndicator = () => (
   <div className="lds-ring">
