@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 
 import Card from '../../UI/Card/Card';
 import './IngredientForm.scss';
+import ErrorModal from "../../UI/ErrorModal/ErrorModal";
+import LoadingIndicator from "../../UI/LoadingIndicator/LoadingIndicator";
 
 const IngredientForm = React.memo(props => {
     const [title, setTitle] = useState('');
@@ -28,6 +30,7 @@ const IngredientForm = React.memo(props => {
                     </div>
                     <div className="ingredient-form__actions">
                         <button type="submit">Add Ingredient</button>
+                        {props.loading && <LoadingIndicator/>}
                     </div>
                 </form>
             </Card>
