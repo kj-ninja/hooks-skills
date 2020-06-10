@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 import Card from '../../UI/Card/Card';
 import './IngredientForm.scss';
-import ErrorModal from "../../UI/ErrorModal/ErrorModal";
 import LoadingIndicator from "../../UI/LoadingIndicator/LoadingIndicator";
 
 const IngredientForm = React.memo(props => {

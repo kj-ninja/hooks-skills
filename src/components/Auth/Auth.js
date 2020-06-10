@@ -10,6 +10,7 @@ const Auth = () => {
         authContext.login();
     };
 
+    console.log('RENDERING INGREDIENT FORM');
     return (
         <div className="auth">
             <Card>
